@@ -1,5 +1,5 @@
 let boxOne = document.querySelector(".first");
-let boxTwo=document.querySelector('.second');
+let boxTwo = document.querySelector(".second");
 // generating random color
 function generateRandomColor() {
   let hexChars = [
@@ -29,17 +29,13 @@ function generateRandomColor() {
 }
 
 function handleClick() {
-    let randomCol = generateRandomColor();
-    boxOne.style.backgroundColor = randomCol;
-  }
-  function handleMousemove(){
-    let randomCol=generateRandomColor();
-    boxTwo.style.backgroundColor=randomCol;
-  }
+  let randomCol = generateRandomColor();
+  boxOne.style.backgroundColor = randomCol;
+}
+function handleMousemove() {
+  let randomCol = generateRandomColor();
+  boxTwo.style.backgroundColor = randomCol;
+}
 
 boxOne.addEventListener("click", handleClick);
-boxTwo.addEventListener("mousemove",handleMousemove);
-
-// boxTwo
-
-  
+boxTwo.addEventListener("mousemove", handleMousemove);
