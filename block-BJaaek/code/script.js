@@ -1,19 +1,45 @@
-const colors = [];
-
-for (let i = 0; i < 10; i++) {
-  const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
-  colors.push(randomColor);
+let boxOne = document.querySelector(".first");
+let boxTwo=document.querySelector('.second');
+// generating random color
+function generateRandomColor() {
+  let hexChars = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+  ];
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    let randomNumber = Math.floor(Math.random() * 16);
+    color = color + hexChars[randomNumber];
+  }
+  return color;
 }
 
-let one=document.querySelector(".first");
-let button=document.querySelector("p");
-button.addEventListener("click",function(){
-    one.style.backgroundColor=colors[0];
-})
+function handleClick() {
+    let randomCol = generateRandomColor();
+    boxOne.style.backgroundColor = randomCol;
+  }
+  function handleMousemove(){
+    let randomCol=generateRandomColor();
+    boxTwo.style.backgroundColor=randomCol;
+  }
 
-// box2
-let second=document.querySelector(".second");
-let button2=document.querySelector(".snd");
-button2.addEventListener("mousemove",function(){
-    second.style.backgroundColor=colors[0];
-})
+boxOne.addEventListener("click", handleClick);
+boxTwo.addEventListener("mousemove",handleMousemove);
+
+// boxTwo
+
+  
