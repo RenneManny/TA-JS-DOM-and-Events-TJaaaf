@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.box{
+    background-color: skyblue;
+    margin:0 auto;
+    max-width: 500px;
+    margin-top: 150px;
+    text-align: center;
+}
+input{
+    margin-top: 20px;
+    width:100%;
+    padding: 10px;
+}
