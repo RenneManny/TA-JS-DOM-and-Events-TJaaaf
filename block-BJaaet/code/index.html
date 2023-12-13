@@ -1,27 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Watch List</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-
-    <div class="box">
-      <h1>Movie Watch List</h1>
-      <form action="">
-        <input type="text" placeholder="Enter movie name!">
-        <ul>
-          
-        </ul>
-      </form>
-      
-      
-    </div>
-
-
-
-    <script src="./script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Watchlist App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+    <h1>Movie Watchlist</h1>
+    <input type="text" id="movieInput" placeholder="Enter movie title"><br>
+    <button onclick="addMovie()">Add</button>
+    <ul id="movieList"></ul>
+  </div>
+</div>
+  
+</body>
+<script src="script.js"></script>
 </html>
