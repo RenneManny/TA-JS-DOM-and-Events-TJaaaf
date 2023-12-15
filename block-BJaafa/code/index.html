@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chrome Extension</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <script src="./script.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+  <link rel="stylesheet" href="style.css">
+  <title>ChatGPT Opener</title>
+  <style>
+    body {
+      width: 200px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Chat <span>GPT</span></h1>
+    <button id="openChatGPT">Open ChatGPT</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "ChatGPT Opener",
+    "version": "1.0",
+    "description": "Open ChatGPT using this extension.",
+    "permissions": ["activeTab"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+    "browser_action": {
+      "default_popup": "index.html"
+    }
+  }
+  
