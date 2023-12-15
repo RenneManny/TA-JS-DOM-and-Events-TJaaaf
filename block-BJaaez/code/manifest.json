@@ -1,10 +1,11 @@
 {
-  "manifest_version": 2,
-  "name": "ChatGPT Opener",
-  "version": "1.0",
-  "description": "Open ChatGPT using this extension.",
-  "permissions": ["activeTab"],
-  "browser_action": {
-    "default_popup": "index.html"
+  "name": "quantum_TraCK",
+  "version": "1.0.0",
+  "description": "To-Do app",
+  "manifest_version": 3,
+  "author": "Akhil Kumar",
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "To-do app"
   }
 }
