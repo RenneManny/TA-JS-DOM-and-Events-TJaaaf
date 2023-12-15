@@ -1,0 +1,11 @@
+{
+  "name": "quantum_TraCK",
+  "version": "1.0.0",
+  "description": "To-Do app",
+  "manifest_version": 3,
+  "author": "Akhil Kumar",
+  "action":{
+      "default_popup": "index.html",
+      "default_title": "To-do app"
+  }
+}
